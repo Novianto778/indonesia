@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  height: 80px;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+a.nav-link {
+  color: rgb(0, 0, 0) !important;
+}
+
+.jumbotron {
+  background-image: url(images/jumbotron.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  margin-top: -80px;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font-size: 42px;
+  color: rgb(0, 0, 0);
+}
+
+.jumbotron h1:nth-child(1) {
+  margin-top: 120px;
+}
+
+.jumbotron h1:nth-child(2) {
+  margin-top: -20px;
+}
+
+.jumbotron .btn {
+  padding: 5px 50px;
+  border-radius: 10px;
+  background-color: #d94b4b;
+  margin-top: 20px;
+}
+
+.panel-info {
+  margin-top: -120px;
+}
+
+.panel-box {
+  background-color: white;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  justify-content: space-between;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.info {
+  align-items: center;
+  margin-top: 15px;
+  font-size: 24px;
+}
+
+.info p:nth-child(2) {
+  margin-top: -15px;
+}
+
+.awesomes {
+  margin-top: 120px;
+  position: relative;
+}
+
+.awesomes h2 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.awesomes img {
+  width: 492px;
+}
+
+.awesomes .row {
+  margin-top: 70px;
+}
+
+.awesomes h4 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.awesomes .frame {
+  margin-bottom: 40px;
+  display: none;
+}
+
+.awesomes .kanan {
+  margin-bottom: 10px;
+}
+
+.awesomes p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.awesomes img.utama {
+}
+
+.awesomes img.frame-right {
+  z-index: -1;
+  margin-top: 15px;
+}
+
+@media (min-width: 990px) {
+  .jumbotron {
+    height: 640px;
+  }
+
+  .jumbotron h1 {
+    font-size: 64px;
+  }
+
+  .panel-info {
+    margin-top: -90px;
+  }
+
+  .awesomes .frame {
+    display: block;
+  }
+  .awesomes img.utama {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+  }
+
+  .awesomes .description {
+    margin-left: 50px;
+  }
+
+  .awesomes img.frame-right {
+    position: absolute;
+    top: -45px;
+    left: 50px;
+    z-index: -1;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .btn {
+    width: 80%;
+  }
+
+  .jumbotron {
+    height: 460px;
+  }
+}
