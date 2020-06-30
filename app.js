@@ -24,14 +24,14 @@ const reviews = [
   },
   {
     name: "Josh Robertson",
-    job: "UX Desigener",
+    job: "UX Designer",
     text:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae vel eaque quia cupiditate veniam a iusto? Harum debitis et eligendi. Omnis dicta fuga repellat ratione recusandae itaque sed autem nobis.",
     imgUrl: "images/review-img-2.png",
   },
   {
     name: "Park Sung Hoon",
-    job: "Lecture",
+    job: "Lecturer",
     text:
       "Quos, veniam aspernatur facere nesciunt sint unde cupiditate porro! Nisi esse perferendis dolore. Commodi, atque doloremque assumenda dolor in debitis. Incidunt commodi magni laboriosam esse at, fugiat soluta quia odio officia alias optio porro illo rerum. Aut ipsum sit nobis delectus! Fugit, nulla.",
     imgUrl: "images/review-img-3.png",
