@@ -14,36 +14,48 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <!-- header -->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">Indonesia</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
-              <a class="nav-item nav-link active" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-              <a class="nav-item nav-link" href="#awesomes">Awesomes</a>
-              <a class="nav-item nav-link" href="#videos">Videos</a>
-              <a class="nav-item nav-link" href="#gallery">Gallery</a>
-              <a class="nav-item nav-link" href="#about">About</a>
-            </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-nav">
+      <div class="container">
+        <a class="navbar-brand" href="#">Indonesia</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" id="home" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link" href="#awesomes">Awesomes</a>
+            <a class="nav-item nav-link" href="#videos">Videos</a>
+            <a class="nav-item nav-link" href="#gallery">Gallery</a>
+            <a class="nav-item nav-link" href="#about">About</a>
+            <a class="nav-item nav-link" href="#review">Review</a>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
     <!-- end of header -->
 
     <!-- jumbotron -->
@@ -54,40 +66,13 @@
           Welcome To
         </h1>
         <h1>Indonesia</h1>
-        <a href="#" class="btn btn-primary">Explore</a>
+        <a href="#awesomes" class="btn btn-primary">Explore</a>
       </div>
     </div>
 
     <!-- end of jumbotron -->
 
-    <!-- panel info -->
     <div class="container">
-      <div class="panel-info">
-        <div class="row justify-content-center">
-          <div class="col-8 align-items-center panel-box">
-            <div class="row">
-              <div class="col-lg info">
-                <p>17000+</p>
-                <p>Islands</p>
-              </div>
-              <div class="col-lg info">
-                <p>1340</p>
-                <p>Tribes</p>
-              </div>
-              <div class="col-lg info">
-                <p>6</p>
-                <p>Reigions</p>
-              </div>
-              <div class="col-lg info">
-                <p>652</p>
-                <p>Languages</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end of panel info -->
-
       <!-- Awesomes -->
       <div class="awesomes" id="awesomes">
         <h2>Awesomes</h2>
@@ -101,9 +86,9 @@
             <img
               src="images/destination.jpg"
               alt="Destination Image"
-              class="utama img-fluid"
+              class="utama img-fluid img-appear"
             />
-            <p>Nusapeninda, Bali</p>
+            <p class="img-caption">Nusapeninda, Bali</p>
           </div>
           <div class="col-lg description">
             <h4>Indonesian Destination</h4>
@@ -154,9 +139,9 @@
             <img
               src="images/food.jpg"
               alt="Food Image"
-              class="kanan img-fluid"
+              class="kanan img-fluid img-appear"
             />
-            <p>Ikan Bakar Sambal Matah</p>
+            <p class="img-caption">Ikan Bakar Sambal Matah</p>
           </div>
         </div>
         <div class="row align-items-center">
@@ -169,9 +154,9 @@
             <img
               src="images/culture.jpg"
               alt="Culture Image"
-              class="utama img-fluid"
+              class="utama img-fluid img-appear"
             />
-            <p>Tari Bali</p>
+            <p class="img-caption">Tari Bali</p>
           </div>
           <div class="col-lg description">
             <h4>Indonesian Culture</h4>
@@ -191,50 +176,108 @@
             </p>
           </div>
         </div>
-      </div>
 
-      <!-- End of awesomes -->
+        <!-- End of awesomes -->
 
-      <!-- videos -->
-      <div class="videos" id="videos">
-        <h2>Videos</h2>
-        <div class="row">
-          <div class="col-lg">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe
-                class="embed-responsive-item"
-                src="https://www.youtube.com/embed/ojQbArbuN4E"
-                allowfullscreen
-              ></iframe>
+        <!-- videos -->
+        <div class="videos" id="videos">
+          <h2>Videos</h2>
+          <div class="row">
+            <div class="col-lg">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/ojQbArbuN4E"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/Zpo4CCYjDb4"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
-          <div class="col-lg">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe
-                class="embed-responsive-item"
-                src="https://www.youtube.com/embed/Zpo4CCYjDb4"
-                allowfullscreen
-              ></iframe>
+        </div>
+
+        <!-- end of videos -->
+
+        <!-- gallery -->
+        <h2 id="gallery">Gallery</h2>
+        <div class="gallery">
+          <img
+            src="images/1.jpg"
+            alt="image"
+            class="img-gallery image1 img-fluid"
+          />
+          <img
+            src="images/2.jpg"
+            alt="image"
+            class="img-gallery image2 img-fluid"
+          />
+          <img
+            src="images/3.jpg"
+            alt="image"
+            class="img-gallery image3 img-fluid"
+          />
+          <img
+            src="images/4.jpg"
+            alt="image"
+            class="img-gallery image4 img-fluid"
+          />
+          <img
+            src="images/5.jpg"
+            alt="image"
+            class="img-gallery image5 img-fluid"
+          />
+          <img
+            src="images/6.jpg"
+            alt="image"
+            class="img-gallery image6 img-fluid"
+          />
+        </div>
+
+        <!-- end of gallery -->
+      </div>
+      <!-- review -->
+      <div id="review" class="row align-items-center justify-content-center">
+        <div class="review col-lg-8">
+          <h2>Our Review</h2>
+          <div class="review-container">
+            <div class="img-container">
+              <img
+                id="person-img"
+                class="img-fluid"
+                src="images/review-img-1.png"
+                alt=""
+              />
+            </div>
+            <p id="name">Sarah Yang</p>
+            <p id="job">Internatonal Model</p>
+            <p id="text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
+              temporibus magni odit, nemo illum neque dignissimos ab nostrum
+              corrupti dolorem!
+            </p>
+            <div class="button-container">
+              <button class="prev-btn btn btn-primary px-3 py-1">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="next-btn btn btn-primary px-3 py-1">
+                <i class="fas fa-chevron-right"></i>
+              </button>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- end of videos -->
-
-      <!-- gallery -->
-      <h2 id="gallery">Gallery</h2>
-      <div class="gallery">
-        <img src="images/1.jpg" alt="image" class="image1 img-fluid" />
-        <img src="images/2.jpg" alt="image" class="image2 img-fluid" />
-        <img src="images/3.jpg" alt="image" class="image3 img-fluid" />
-        <img src="images/4.jpg" alt="image" class="image4 img-fluid" />
-        <img src="images/5.jpg" alt="image" class="image5 img-fluid" />
-        <img src="images/6.jpg" alt="image" class="image6 img-fluid" />
-      </div>
-
-      <!-- end of gallery -->
+      <!-- end of review -->
     </div>
+
     <!-- footer -->
     <footer id="about">
       <div class="container">
@@ -273,8 +316,8 @@
         </div>
       </div>
     </footer>
-
     <!-- end of footer -->
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -290,5 +333,6 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
   </body>
 </html>
