@@ -341,7 +341,7 @@ footer .sub {
   padding: 30px 0;
 }
 @media (max-width: 375px) {
-  .btn {
+  .jumbotron btn {
     width: 80%;
   }
 
